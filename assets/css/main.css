@@ -355,6 +355,7 @@ body{
 
 #portfolio-section .subtitle{
 	text-align:center;
+	color: var(--text-color-second);
 }
 
 .portfolio-container{
