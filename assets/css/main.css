@@ -95,7 +95,7 @@ body{
 	display:flex;
 
 	position:fixed;
-	z-index:1;
+	z-index:5;
 	top:0px;
 	left:0px;
 }
@@ -177,6 +177,7 @@ body{
 #skills-section{
 	padding:100px 0px;
 	color:white;
+	min-height:80vh;
 }
 
 .skills-column{
@@ -260,6 +261,7 @@ body{
 #services-section{
 	color:white;
 	background:none;
+	min-height:80vh;
 }
 
 #services-section h2{
@@ -335,6 +337,7 @@ body{
 	cursor:pointer;
 }
 
+
 .cardButton:hover a{
 	color:white;
 }
@@ -353,7 +356,7 @@ body{
 	text-align:center;
 }
 
-#portfolio-section .subtitle{
+.subtitle{
 	text-align:center;
 	color: var(--text-color-second);
 }
@@ -363,8 +366,9 @@ body{
 	margin:auto;
 
 	display:grid;    
-    grid-gap:15px;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap:30px;
+	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+
 }
 
 /* 250x150 */
@@ -443,8 +447,9 @@ body{
 ********************/
 
 #contact-section{
-	height:100vh;
+	min-height:60vh;
 	display:flex;
+	flex-direction:column;
 	color:white;
 }
 #contact-form{
@@ -523,6 +528,45 @@ body{
 
 
 
+/*Icons*/
+
+.row{
+	width:100%;
+	display:flex;
+	justify-content:center;
+}
+
+.row > div{
+	margin:25px;
+}
+
+.skill-icon{
+	position:relative;
+	width:100px;
+	height:100px;
+}
+
+.skill-icon img{
+	z-index:2;
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+
+.skill-icon .skill-icon-hover{
+	z-index:1;
+}
+
+.skill-icon:hover .skill-icon-hover{
+	z-index:3;
+	cursor:pointer;
+}
+
+
+
+
+
+
 
 
 
@@ -534,6 +578,18 @@ body{
 	body{
 		font-size:20px;
 	}
+
+	.row > div{
+		margin:15px;
+	}
+	
+	.skill-icon{
+		position:relative;
+		width:75px;
+		height:75px;
+	}
+
+
 
 	.profile{
 		margin-top:50px;
@@ -578,6 +634,7 @@ body{
 		border-width:2px;
 	}
 }
+
 
 @media screen and (max-width: 820px) {
 
