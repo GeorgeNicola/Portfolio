@@ -742,4 +742,21 @@ body{
 	#menu{
 		padding:0 1em;
 	}
+
+	.row > div{
+		margin:12.5px;
+	}
+	
+	.skill-icon{
+		position:relative;
+		width:40px;
+		height:30px;
+	}
+	
+	.skill-icon img{
+		z-index:2;
+		position:absolute;
+		width:40px;
+		height:40px;
+	}
 }
