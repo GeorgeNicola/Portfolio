@@ -37,7 +37,7 @@ function currentScrollPercentage()
 
 function menuScrollSelect(current){
   let li = document.querySelectorAll("#menu .scroll");
-  for(let i=0;i<5;i++)
+  for(let i=0;i<li.length;i++)
     if(i === current)
        li[i].classList.add("menu-selected-scrolling");
     else
@@ -48,11 +48,10 @@ function menuScrollSelect(current){
 window.addEventListener("scroll", function(){
   let scroll = currentScrollPercentage();
   //console.log(scroll);
-  if(scroll > 0) menuScrollSelect(0);
-  if(scroll > 12) menuScrollSelect(1);
-  if(scroll > 37) menuScrollSelect(2);
-  if(scroll > 64) menuScrollSelect(3);
-  if(scroll > 90) menuScrollSelect(4);
+  if(scroll > 0 && scroll <= 25) menuScrollSelect(0);
+  if(scroll > 25 && scroll <= 60) menuScrollSelect(1);
+  if(scroll > 60 && scroll <= 85) menuScrollSelect(2);
+  if(scroll > 85 && scroll <= 100) menuScrollSelect(3);
 })//Select Menu Element Listener
 
 

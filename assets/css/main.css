@@ -53,6 +53,7 @@ body{
 
 .section{
 	width:100%;
+	min-height:70%;
 	padding:2em;
 	box-sizing:border-box;
 	background-color:var(--background-color);
@@ -546,24 +547,17 @@ body{
 	height:100px;
 }
 
-.skill-icon img{
-	z-index:2;
-	position:absolute;
-	width:100px;
-	height:100px;
-}
-
 .skill-icon .skill-icon-hover{
-	z-index:1;
-}
-
-.skills-icon:hover img{
 	display:none;
 }
 
-.skill-icon:hover .skill-icon-hover{
-	z-index:3;
+.skill-icon:hover img{
+	display:none;
 	cursor:pointer;
+}
+
+.skill-icon:hover .skill-icon-hover{
+	display:block;
 }
 
 
