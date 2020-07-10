@@ -557,6 +557,10 @@ body{
 	z-index:1;
 }
 
+.skills-icon:hover img{
+	display:none;
+}
+
 .skill-icon:hover .skill-icon-hover{
 	z-index:3;
 	cursor:pointer;
