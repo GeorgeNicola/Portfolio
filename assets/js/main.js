@@ -17,11 +17,13 @@ $( document ).ready(function() {
   //Functionality for Portfolio Section's cards
 
 
+  $(function(){
+    $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});
+  });
+  //TwentyTwenty
 
-
-
- 
-
+  $('#services-section').parallax({imageSrc: 'assets/img/parallax1.PNG'});
+  //Parallax Effect
 
 
 });
@@ -58,14 +60,6 @@ window.addEventListener("scroll", function(){
 
 
 
-
-$('#services-section').parallax({imageSrc: 'assets/img/parallax1.PNG'});
-//Parallax Effect
-
-$(function(){
-    $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});
-  });
-//TwentyTwenty
 
 
 
