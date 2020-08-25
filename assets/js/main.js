@@ -17,10 +17,18 @@ $( document ).ready(function() {
   //Functionality for Portfolio Section's cards
 
 
+
+  $("#twentytwenty").imagesLoaded( function() {
+    $("#twentytwenty").twentytwenty({default_offset_pct: 0.7});
+  });
+
+/*
   $(function(){
     $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});
   });
   //TwentyTwenty
+
+*/
 
   $('#services-section').parallax({imageSrc: 'assets/img/parallax1.PNG'});
   //Parallax Effect
