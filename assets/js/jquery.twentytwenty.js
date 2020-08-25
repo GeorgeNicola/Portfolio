@@ -12,6 +12,10 @@
       click_to_move: false
     }, options);
 
+    $(window).load(function() {
+      $(window).trigger("resize.twentytwenty");
+   });
+
     return this.each(function() {
 
       var sliderPct = options.default_offset_pct;
@@ -85,6 +89,7 @@
       $(window).on("resize.twentytwenty", function(e) {
         adjustSlider(sliderPct);
       });
+      
 
       var offsetX = 0;
       var offsetY = 0;
